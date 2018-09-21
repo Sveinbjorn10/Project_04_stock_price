@@ -26,10 +26,11 @@ while condition:
         while True:
             try:
                 price(share_num)
+                condition = continuation()
                 break
             except:
                 print("Invalid price!")
     except:
         print("Invalid number!")
-    condition = continuation()
+    
 
