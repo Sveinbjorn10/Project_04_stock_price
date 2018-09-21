@@ -1,3 +1,6 @@
+
+# https://github.com/Sveinbjorn10/Project_04_stock_price/commits/master
+
 condition = True
 
 def shares():
