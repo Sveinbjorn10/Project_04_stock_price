@@ -18,7 +18,8 @@ def continuation():
         elif (us_inp == "n") or (us_inp == "N"): 
             return False
         else:
-            pass
+            print("Press Y or y to continue.")
+            print("Press N or n to exit.")
 
 while condition:
     try:
