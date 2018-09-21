@@ -4,9 +4,11 @@
 condition = True
 
 def shares():
+    """Asks for the amount of shares the user wants to calculate from."""
     return int(input("Enter number of shares: "))
 
 def price(shares):
+    """Asks for the price of the stock and prints out the total price of the shares."""
     dollar, nume, deno = input("Enter price (dollars, numerator, denominator): ").split()
     unit_price = int(dollar) + (int(nume)/int(deno))
     total_price = "{0:.2f}".format(unit_price* shares)
@@ -14,6 +16,7 @@ def price(shares):
     print(output)
 
 def continuation():
+    """Asks the user if he would want to continue with the program."""
     while True:
         us_inp = input("Continue: ")
         if (us_inp == "y") or (us_inp == "Y"):
